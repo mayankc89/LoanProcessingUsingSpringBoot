@@ -1,6 +1,18 @@
 # LoanProcessingUsingSpringBoot
 Test Project to process loans using SpringBoot
 
+- Form which accepts
+  - Loan Value
+  - Property Value
+  - Social Security (SSN)
+- and returns
+  - Loan Id
+  - Loan Status (Accepted or Rejected) based on `Loan To Value(LTV)`
+- If `LTV` > **40** percent
+  - *Loan Status : Rejected*
+- Else
+  - *Loan Status : Accepted*
+
 ## Getting Started
 
 ### Requirements
@@ -25,3 +37,7 @@ Now, we're ready to launch the service:
   - Or click on Run Application in your IDE
   
 This will start the service on the default port of `8080` connected to a local [`HSQLDB`](http://hsqldb.org/)
+
+### To Stop
+
+To gracefully stop, ctrl-c
