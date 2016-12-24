@@ -1,0 +1,5 @@
+# HSQLDB configuration
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop

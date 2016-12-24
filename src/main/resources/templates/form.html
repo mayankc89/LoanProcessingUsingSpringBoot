@@ -1,0 +1,28 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+    <body>
+        <form action="#" th:action="@{/}" th:object="${loan}" method="post">
+            <table>
+                <tr>
+                    <td>Loan Amount:</td>
+                    <td><input type="number" th:field="*{loanAmount}"/></td>
+                    <td th:if="${#fields.hasErrors('loanAmount')}" th:errors="*{loanAmount}">Loan Amount Error</td>
+                </tr>
+                <tr>
+                    <td>Property Value:</td>
+                    <td><input type="number" th:field="*{propertyValue}"/></td>
+                    <td th:if="${#fields.hasErrors('propertyValue')}" th:errors="*{propertyValue}">Property Value Error</td>
+                </tr>
+                <tr>
+                    <td>Social Security:</td>
+                    <td><input type="number" th:field="*{ssn}" th:max="999999999"/></td>
+                    <td th:if="${#fields.hasErrors('ssn')}" th:errors="*{ssn}">Social Security Error</td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
