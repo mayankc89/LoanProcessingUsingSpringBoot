@@ -37,6 +37,7 @@ Now, we're ready to launch the service:
   - Or click on Run Application in your IDE
   
 This will start the service on the default port of `8080` connected to a local [`HSQLDB`](http://hsqldb.org/)
+and can be accessed by typing `localhost:8080` in any browser
 
 ### To Stop
 
