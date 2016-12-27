@@ -25,7 +25,7 @@ public class LoanServiceImpl implements LoanService {
     @Override
     public Loan createLoan(@Valid final Loan loan) {
         loan.setLoanStatus("Rejected");
-        if (loan.getLoanAmount() > (1.4*loan.getPropertyValue())) {
+        if (loan.getLoanAmount() <= (1.4*loan.getPropertyValue())) {
             loan.setLoanStatus("Accepted");
         }
         return repository.save(loan);
