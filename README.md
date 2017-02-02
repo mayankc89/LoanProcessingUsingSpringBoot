@@ -1,6 +1,7 @@
 # LoanProcessingUsingSpringBoot
-Test Project to process loans using SpringBoot
+### Travis-CI Build Status  [![Travis-ci Build Status](https://travis-ci.org/mayankc89/LoanProcessingUsingSpringBoot.svg?branch=master)](https://travis-ci.org/mayankc89/LoanProcessingUsingSpringBoot) 
 
+Test Project to process loans using SpringBoot
 - Form which accepts
   - Loan Value
   - Property Value
