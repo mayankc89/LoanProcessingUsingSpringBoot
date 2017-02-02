@@ -2,4 +2,3 @@ language: java
 # To test against different jdk
 jdk:
  - oraclejdk8
- - oraclejdk7
