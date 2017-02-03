@@ -1,4 +1,8 @@
 language: java
-# To test against different jdk
+# To test against a specific jdk
 jdk:
  - oraclejdk8
+# Disable email notifications and enable slack notifications
+notifications:
+  email: false
+  slack: utd69:1e3rMrgHMgwo9qmqvPH0JuRc
