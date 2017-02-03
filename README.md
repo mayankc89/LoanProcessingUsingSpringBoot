@@ -43,3 +43,13 @@ and can be accessed by typing `localhost:8080` in any browser
 ### To Stop
 
 To gracefully stop, ctrl-c
+
+### Added CI support using Travis CI
+- [Setup](https://docs.travis-ci.com/user/languages/java/)
+- [Adding Build Badge](https://toedter.com/2014/05/23/continuous-integration-with-travis-ci/)
+
+### Added Slack Notifications
+- [Setup](https://docs.travis-ci.com/user/notifications/#Configuring-slack-notifications)
+    - Create a Channel
+    - Click on *Add an App or Integration*
+    - Paste the code listed for *Simple notifications* in your `.travis.yml` file
